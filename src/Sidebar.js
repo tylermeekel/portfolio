@@ -43,10 +43,9 @@ export default function Sidebar(){
             {showContact &&
                 <div>
                     <ul>
-                        <li>email</li>
-                        <li>facebook</li>
-                        <li>instagram</li>
-                        <li>github</li>
+                        <li><a href="mailto:ty.meekel@gmail.com?body=Hello%20Tyler%2C">email</a></li>
+                        <li><a href="https://www.instagram.com/tylermeekel">instagram</a></li>
+                        <li><a href="https://github.com/tylermeekel">github</a></li>
                     </ul>
                 </div>
             }

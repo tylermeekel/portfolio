@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Body from "./Body";
+import Footer from "./Footer";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+
+    //State
+    const [showSide, setShowSide] = React.useState(false)
+
+
+    //Functions
+    function toggleSidebar(){
+        setShowSide(prevState => !prevState)
+    }
+
+
+    //JSX
+    return (
+        <div className="appContainer">
+            <div className="mainContainer">
+                <Header/>
+                <Body toggle_sidebar={toggleSidebar}/>
+                <Footer/>
+            </div>
+            {showSide &&
+            <div className="sidebarContainer slide-in-bottom" >
+                <Sidebar />
+            </div>
+            }
+        </div>
+    )
 }
-
-export default App;

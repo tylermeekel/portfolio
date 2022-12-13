@@ -23,6 +23,7 @@ body{
 
 .appContainer{
     display: flex;
+    overflow-y: hidden;
 }
 
 .sidebarContainer{
@@ -100,11 +101,16 @@ body{
     align-items: flex-end;
     margin-right: 3vmin;
     gap: 10px;
+    overflow-y: hidden;
 }
 
 .navigation > li{
     color: whitesmoke;
     list-style: none;
+}
+
+.projects {
+  overflow-y: hidden;
 }
 
 .projects-clicker{

@@ -36,6 +36,9 @@ export default function Sidebar(){
                             rel="noopener noreferrer">
                                 reproducable password generator
                         </a></li>
+                        <li><a href="https://statuesque-creponne-ea0d40.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            kanban todo app
+                        </a></li>
                     </ul>
                 </div>
             }
